@@ -84,6 +84,9 @@ if len(vin) == 17:
      
         data_results = data_results.dropna(axis=1, thresh = 1)
         data_results = data_results.sort_values('match_count', ascending=False).reset_index(drop=True)
+        
+        col = data_results.pop('match_count')
+        data_results.insert(loc= 0 , column= 'match_count', value= col)
 
         st.dataframe(data_results)
     except:
