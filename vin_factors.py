@@ -88,28 +88,30 @@ if len(vin) == 17:
         col = data_results.pop('match_count')
         data_results.insert(loc= 0 , column= 'match_count', value= col)
 
-        
+        col = data_results.pop('VIN')
+        data_results.insert(loc= 1 , column= 'VIN', value= col)
+
         col = data_results.pop('VehicleType')
-        data_results.insert(loc= 1 , column= 'VehicleType', value= col)
+        data_results.insert(loc= 2 , column= 'VehicleType', value= col)
         
         
         col = data_results.pop('ModelYear')
-        data_results.insert(loc= 2 , column= 'ModelYear', value= col)
+        data_results.insert(loc= 3 , column= 'ModelYear', value= col)
 
         col = data_results.pop('Make')
-        data_results.insert(loc= 3 , column= 'Make', value= col)
+        data_results.insert(loc= 4 , column= 'Make', value= col)
 
         col = data_results.pop('Model')
-        data_results.insert(loc= 4 , column= 'Model', value= col)
+        data_results.insert(loc= 5 , column= 'Model', value= col)
 
         col = data_results.pop('Trim')
-        data_results.insert(loc= 5 , column= 'Trim', value= col)
+        data_results.insert(loc= 6 , column= 'Trim', value= col)
 
         col = data_results.pop('Series')
-        data_results.insert(loc= 6 , column= 'Series', value= col)
+        data_results.insert(loc= 7 , column= 'Series', value= col)
 
         col = data_results.pop('BodyClass')
-        data_results.insert(loc= 7 , column= 'BodyClass', value= col)
+        data_results.insert(loc= 8 , column= 'BodyClass', value= col)
 
 
         st.dataframe(data_results)
