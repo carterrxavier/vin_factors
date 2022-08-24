@@ -73,11 +73,11 @@ if option == 'Decode':
         print_results = st.empty()
 
         if st.checkbox('Show more info'):
-            more = pd.DataFrame(columns=['Keys','Values'])
+            more = pd.DataFrame()
             more['Keys'] = list(result['Results'][0].keys())
             more['Values'] = list(result['Results'][0].values())
 
-            st.dataframe(more, width=2000)
+            st.dataframe(more)
         
 
         try:
