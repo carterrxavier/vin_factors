@@ -77,7 +77,7 @@ if option == 'Decode':
             more['Keys'] = list(result['Results'][0].keys())
             more['Values'] = list(result['Results'][0].values())
 
-            st.dataframe(more, width=500)
+            st.dataframe(more, width=2000)
         
 
         try:
